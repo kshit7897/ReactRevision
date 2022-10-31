@@ -1,17 +1,16 @@
 import React, { useState } from "react";
 
 const Child = (props) => {
-  const [childData, setChildData] = useState("This Is Child Data");
-
+  const [childData, setChildData] = useState("THIS IS CHILD DATA");
   return (
     <div>
-      <h2>{props.kshit}</h2>
+      {/* <h1>{props.kshit}</h1> */}
       <button
         onClick={() => {
-          props.kshit(childData);
+          props.getDataFromCHild(childData);
         }}
       >
-        Click To Get Child Data In Parent
+        GET CHILD DATA
       </button>
     </div>
   );
